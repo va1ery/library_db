@@ -29,7 +29,8 @@ namespace library_db.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlite("Data Source=C:\\Users\\leo\\Documents\\library.db");
+                //    optionsBuilder.UseSqlite("Data Source=C:\\Users\\leo\\Documents\\library.db");
+                optionsBuilder.UseSqlServer("Data Source=LEO-ПК\\SQLEXPRESS;Initial Catalog=library_db;Integrated Security=True");
             }
         }
 
