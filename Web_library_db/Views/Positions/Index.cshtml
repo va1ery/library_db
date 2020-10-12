@@ -1,0 +1,53 @@
+﻿@model IEnumerable<library_db.Models.Position>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PosName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PosSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PosDuties)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PosRequirements)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosDuties)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PosRequirements)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PosId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PosId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PosId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
