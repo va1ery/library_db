@@ -30,7 +30,7 @@ namespace library_db.Data
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 //    optionsBuilder.UseSqlite("Data Source=C:\\Users\\leo\\Documents\\library.db");
-                optionsBuilder.UseSqlServer("Data Source=LEO-ПК\\SQLEXPRESS;Initial Catalog=library_db;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=library_db;Integrated Security=True");
             }
         }
 

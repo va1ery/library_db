@@ -28,7 +28,7 @@ namespace Web_library_db
             services.AddControllersWithViews();
 
             services.AddDbContext<libraryContext>(options =>
-                    options.UseSqlServer("Data Source=LEO-ой\\SQLEXPRESS;Initial Catalog=library_db;Integrated Security=True"));
+                    options.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=library_db;Integrated Security=True"));
      // 3!!!!!!!!!  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
         }
 

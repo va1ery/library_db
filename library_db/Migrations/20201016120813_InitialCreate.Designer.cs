@@ -9,7 +9,7 @@ using library_db.Data;
 namespace library_db.Migrations
 {
     [DbContext(typeof(libraryContext))]
-    [Migration("20201009115031_InitialCreate")]
+    [Migration("20201016120813_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
